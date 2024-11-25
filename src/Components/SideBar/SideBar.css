@@ -1,0 +1,140 @@
+#sidebar {
+    height: 100%;
+    max-width: 320px;
+    width: 100%;
+
+    padding: 15px;
+
+    color: #1f1f1f;
+    background-color: #f0f4f9;
+    transition: width 0.4s ease-in-out;
+}
+
+#sidebar button {
+    cursor: pointer;
+}
+
+/* Menu icon */
+#sidebar>#menu {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: #d3e3fd;
+    }
+}
+
+#menu .bx-menu {
+    font-size: 2em;
+}
+
+/* Content Area */
+#sidebar #sidebar-content {
+    padding-top: 45px;
+}
+
+/* New Chat Button */
+#sidebar-content #new-chat {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    background-color: #dde3ea;
+    border: none;
+    border-radius: 25px;
+    transition: width 0.35s ease-in-out;
+
+    &:hover {
+        background-color: #ccdaea;
+    }
+}
+
+#new-chat .bx-plus {
+    font-size: 1.75em;
+}
+
+/* Recent Chats */
+#sidebar-content #recents {
+    margin: 15px 0;
+}
+
+#recents h4 {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#recents #history {
+    max-height: 280px;
+    height: 280px;
+    padding: 10px 0;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#history .history {
+    min-height: 35px;
+    padding: 5px 15px;
+
+    font-size: 0.9em;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: nowrap;
+
+    background-color: #d3e3fd;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Settings */
+#setting {
+    display: flex;
+    flex-direction: column;
+}
+
+#setting .setting {
+    font-size: 0.95em;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 10px 12px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    transition: width 0.35s ease-in-out;
+
+    &:hover {
+        background-color: #d3e3fd;
+    }
+}
+
+.setting>.bx {
+    font-size: 1.4em;
+}

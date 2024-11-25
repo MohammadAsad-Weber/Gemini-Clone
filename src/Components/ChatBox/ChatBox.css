@@ -1,0 +1,126 @@
+#chatbox {
+    height: calc(100% - 70px);
+    width: 100%;
+    position: relative;
+}
+
+/* CHATING AREA */
+#chatbox #chat-area {
+    max-height: 480px;
+    width: 100%;
+    padding: 15px calc(20%);
+
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+/* GREETING MESSAGE */
+#chatbox #greet {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+
+    background: linear-gradient(75deg, #4285F4 0%, #9B72CB 25%, #D96570 50%, #D96570 75%, #9B72CB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+/* OUTER INPUT AREA */
+#chatbox #input-area {
+    width: 80%;
+
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+/* INNER INPUT AREA */
+#input-area #input-box {
+    width: 100%;
+    position: relative;
+
+    padding-block: 20px;
+    padding-left: 25px;
+
+    background-color: #f0f4f9;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 -30px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* INPUT */
+#input-box #textarea {
+    max-height: 190px;
+    width: 90%;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    outline: none;
+}
+
+/* PLACEHOLDER */
+#input-box #placeholder {
+    color: #5f6368;
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+/* SEND BUTTON */
+#input-box #send {
+    font-size: 1.5em;
+    padding: 10px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: #d8e0eb;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        color: #5f6368;
+        cursor: not-allowed;
+    }
+}
+
+#send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NOTE */
+#chatbox #note {
+    color: #5f6368;
+    font-size: 0.7em;
+    font-weight: 500;
+
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+}

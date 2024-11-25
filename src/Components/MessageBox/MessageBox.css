@@ -1,0 +1,16 @@
+#message-box {
+    display: flex;
+    column-gap: 20px;
+    max-width: 725px;
+}
+
+#message-box img {
+    aspect-ratio: 1 / 1;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+}
+
+#message-box #message {
+    padding-top: 5px;
+}
