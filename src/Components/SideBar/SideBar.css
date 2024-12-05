@@ -138,3 +138,9 @@
 .setting>.bx {
     font-size: 1.4em;
 }
+
+@media (max-width: 724px) {
+    #sidebar {
+        display: none;
+    }
+}

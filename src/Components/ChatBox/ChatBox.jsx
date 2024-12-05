@@ -72,7 +72,7 @@ function ChatBox() {
             </div>
 
             {/* GREETING TEXT */}
-            {messagesArray.length === 0 && <h1 id="greet">Hello, Mohammad Asad</h1>}
+            {messagesArray.length === 0 && <h1 id="greet">Hello, Asad</h1>}
 
             {/* OUTER INPUT BOX */}
             <div id="input-area">

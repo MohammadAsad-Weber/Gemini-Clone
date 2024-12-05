@@ -8,7 +8,7 @@
 #chatbox #chat-area {
     max-height: 480px;
     width: 100%;
-    padding: 15px calc(20%);
+    padding: 15px calc(15%);
 
     position: absolute;
     z-index: 0;
@@ -25,6 +25,7 @@
 
 /* GREETING MESSAGE */
 #chatbox #greet {
+    min-width: fit-content;
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 2.25rem;
@@ -115,6 +116,7 @@
 
 /* NOTE */
 #chatbox #note {
+    min-width: 270px;
     color: #5f6368;
     font-size: 0.7em;
     font-weight: 500;
@@ -123,4 +125,11 @@
     left: 50%;
     bottom: 15px;
     transform: translateX(-50%);
+}
+
+@media (max-width: 724px) {
+    #chatbox #chat-area {
+        padding: 15px calc(10%);
+
+    }
 }
