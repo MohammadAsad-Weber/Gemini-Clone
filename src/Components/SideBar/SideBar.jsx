@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import API_KEY from '../../GEMINI_API_KEY'; // API Key
 import MessageBox from '../MessageBox/MessageBox'; // Component
 import { GeminiContext } from '../../Context/Index'; // Context API
 import './SideBar.css'; // StyleSheet
@@ -9,6 +8,8 @@ import User from '../../assets/User.png';
 import Bot from '../../assets/ChatBot.png';
 
 function SideBar() {
+    // API Key
+    const API_KEY = import.meta.env.VITE_API_KEY;
 
     // Using Context
     const { historyArray,

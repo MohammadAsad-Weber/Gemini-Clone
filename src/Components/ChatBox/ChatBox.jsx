@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import API_KEY from '../../GEMINI_API_KEY'; // API Key
 import { GeminiContext } from '../../Context/Index'; // Context API
 import './ChatBox.css'; // StyleSheet
 
@@ -12,6 +11,8 @@ import MessageBox from '../MessageBox/MessageBox';
 import Loading from '../Loading/Loading';
 
 function ChatBox() {
+    // API Key
+    const API_KEY = import.meta.env.VITE_API_KEY;
 
     // Using Context
     const { messagesArray,
