@@ -6,7 +6,7 @@
 
 /* CHATING AREA */
 #chatbox #chat-area {
-    max-height: 480px;
+    max-height: calc(100% - 120px);
     width: 100%;
     padding: 15px calc(15%);
 

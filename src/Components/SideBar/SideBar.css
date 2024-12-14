@@ -37,6 +37,7 @@
 
 /* Content Area */
 #sidebar #sidebar-content {
+    height: 100%;
     padding-top: 45px;
 }
 
